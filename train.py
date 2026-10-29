@@ -29,7 +29,7 @@ MODEL_NAME = "loan-default-model"
 # THINK: for this business, a loan that defaults loses most of its value; rejecting a good borrower loses the interest income and the customer.
 # OUR CHOICE: Option B (0.35). A missed default costs most of the loan, while a false alarm costs one review by a
 #   loan officer, so we accept more false alarms to catch more defaults. 0.2 would flood the officers with reviews.
-THRESHOLD = 0.35
+THRESHOLD = 0.2
 
 # TODO 2b: quality gate. The best model is NOT registered if its PR-AUC is below this value.
 #   Option A: 0.35 (lenient)   Option B: 0.45   Option C: 0.55 (strict)
